@@ -8,11 +8,14 @@
 body{
     font-family: 'Lexend', sans-serif;
     font-size: 16px;
+    color: #1F2533;
 }
 
 .container{
     max-width: 1110px;
     width: 100%;
+    margin: 0 auto;
+    padding-inline: 20px;
 }
 
 ul , ol{
@@ -25,4 +28,6 @@ a {
 
 button {
     cursor: pointer;
+    background: none;
+    border: none;
 }

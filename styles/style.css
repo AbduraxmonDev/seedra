@@ -25,7 +25,7 @@
   border-right: 1px solid #efefef;
   padding-inline: 16px;
 }
-.header_section .nav__list__item:nth-child(2) {
+.header_section .nav__list__item:nth-child(8) {
   border-right: 1px solid #efefef;
   padding-inline: 16px;
 }
@@ -97,6 +97,7 @@
   }
   .header .favorite__btn {
     border: 1px solid #efefef !important;
+    display: flex;
   }
   .header .basket__btn {
     border: 1px solid #efefef !important;
@@ -163,6 +164,9 @@
   font-weight: 500;
   color: white;
 }
+.intro__section_text .intro__btn .adding_btn:hover {
+  background-color: #286B30;
+}
 .intro__section_text .intro__btn .discover_btn {
   background-color: #ffffff;
   border-radius: 8px;
@@ -171,6 +175,10 @@
   padding: 11px 32px;
   font-weight: 500;
   color: #359740;
+}
+.intro__section_text .intro__btn .discover_btn:hover {
+  color: white;
+  background-color: #DDDCDC;
 }
 .intro__section .main__product_img {
   width: 300px;
@@ -219,5 +227,521 @@
   .intro__section .main__product_img {
     width: 230px;
     height: 230px;
+  }
+}
+
+.subintro__section {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  text-align: center;
+  background-color: #ffeaad;
+  border-radius: 12px;
+  min-height: 102px;
+  position: relative;
+}
+.subintro__section_text {
+  padding: 30px 10px;
+  margin: 0 auto;
+}
+.subintro__section_text .subintro__subtitle {
+  color: #70737c;
+}
+.subintro__section .sub_bgimg_2 {
+  border-bottom-right-radius: 12px;
+}
+.subintro__section .subbgmobile {
+  display: none;
+}
+@media screen and (max-width: 923px) {
+  .subintro__section .sub_bgimg_1 {
+    display: none;
+  }
+  .subintro__section .sub_bgimg_2 {
+    display: none;
+  }
+  .subintro__section .subbgmobile {
+    display: block;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    max-width: 90px;
+    width: 100%;
+  }
+  .subintro__section .subintro__subtitle {
+    font-size: 13px;
+  }
+}
+
+.product__section {
+  margin-block: 50px;
+}
+.product__section .section__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.product__section .section__header .psh_title {
+  font-size: calc(16px + 1.7391304348vw);
+}
+.product__section .section__header .psh_btn {
+  border: 1px solid #EFEFEF;
+  border-radius: 8px;
+  max-width: 155px;
+  width: calc(127px + 2.4347826087vw);
+  height: calc(45px + 0.8695652174vw);
+}
+.product__section .section__header .psh_btn:hover {
+  border-color: #FFCF55;
+}
+.product__section .section__header .psh_btn:hover .btn_title {
+  color: #FFCF55;
+}
+.product__section .section__header .psh_btn .btn_title {
+  color: #359740;
+}
+.product__section .product__btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block: 50px;
+  gap: 10px;
+}
+.product__section .product__btns .product__types {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid #EFEFEF;
+  border-radius: 8px;
+  min-width: 110px;
+  height: calc(57px + 1.3043478261vw);
+  padding-inline: 20px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.product__section .product__btns .product__types:hover {
+  border-color: green;
+}
+.product__section .product__btns .product__types:hover .types__name {
+  color: green;
+}
+@media screen and (max-width: 1075px) {
+  .product__section .product__btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 1010px) {
+  .product__section .product__btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 830px) {
+  .product__section .product__btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 670px) {
+  .product__section .product__btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 510px) {
+  .product__section .product__btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.product__section .products_content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  margin-inline: 15px;
+}
+.product__section .products_content .products__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #EFEFEF;
+  border-radius: 8px;
+  position: relative;
+  padding: 30px;
+  max-width: 330px;
+  width: 100%;
+  min-height: 512px;
+  height: 100%;
+}
+.product__section .products_content .products__card .to_favorite_btn {
+  background-color: #FFF;
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  border: 1px solid #EFEFEF;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.product__section .products_content .products__card .to_favorite_btn:hover {
+  border-color: #FFCF55;
+  transition: 0.3s;
+}
+.product__section .products_content .products__card .to_favorite_btn:hover .to_favorite {
+  fill: #FFCF55;
+  transition: 0.3s;
+}
+.product__section .products_content .products__card .to_favorite_btn .to_favorite {
+  fill: transparent;
+  stroke: #FFCF55;
+  padding-top: 4px;
+}
+.product__section .products_content .products__card .product__info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.product__section .products_content .products__card .product__info .product_rating {
+  display: flex;
+}
+.product__section .products_content .products__card .product__info .product_rating .product_number {
+  padding-left: 13px;
+  color: #70737c;
+}
+.product__section .products_content .products__card .product__info .product_cost {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.product__section .products_content .products__card .product__info .product_cost .to_basket_btn {
+  border: 1px solid #EFEFEF;
+  border-radius: 8px;
+  width: 48px;
+  height: 48px;
+}
+.product__section .products_content .products__card .product__info .product_cost .to_basket_btn:hover {
+  transition: 0.3s;
+  border-color: #FFCF55;
+}
+.product__section .products_content .products__card .product__info .product_cost .to_basket_btn:hover .bskt_icon {
+  fill: #FFCF55;
+}
+.product__section .products_content .products__card .product__info .product_cost .to_basket_btn:hover .bskt_icon path {
+  fill: #FFCF55;
+}
+.product__section .products_content .products__card .product__info .product_cost .to_basket_btn .bskt_icon {
+  fill: green;
+}
+@media screen and (max-width: 1096px) {
+  .product__section .products_content {
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 744px) {
+  .product__section .products_content {
+    grid-template-columns: 1fr;
+  }
+  .product__section .products_content .products__card {
+    max-width: 280px;
+    width: 100%;
+  }
+  .product__section .products_content .products__card .product_part_img {
+    width: 260px;
+    height: 260px;
+  }
+}
+
+.blog_section {
+  margin-block: 50px;
+}
+.blog_section .section__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.blog_section .section__header .bsh_title {
+  font-size: calc(16px + 1.8018018018vw);
+}
+.blog_section .section__header .bsh_btn {
+  border: 1px solid #EFEFEF;
+  border-radius: 8px;
+  max-width: 173px;
+  width: calc(160px + 1.1711711712vw);
+  height: calc(47px + 0.3603603604vw);
+}
+.blog_section .section__header .bsh_btn:hover {
+  border-color: #FFCF55;
+}
+.blog_section .section__header .bsh_btn:hover .btn_title {
+  color: #FFCF55;
+}
+.blog_section .section__header .bsh_btn .btn_title {
+  color: #359740;
+}
+.blog_section .blog_content {
+  margin-block: 50px;
+  gap: 30px;
+  display: grid;
+}
+.blog_section .blog_content .content_main {
+  display: grid;
+  grid-column: 1/span 2;
+  grid-row: 1/2;
+  max-width: 730px;
+  width: 100%;
+  min-height: 300px;
+  border-radius: 12px;
+  padding: 30px;
+  background-color: #EAF1EB;
+  background-image: url(/assets/images/blog_section/spinach.png);
+  background-size: calc(130px + 8.6956521739vw);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+.blog_section .blog_content .content_main .planting_instruction {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.blog_section .blog_content .content_main .planting_instruction .time_section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+.blog_section .blog_content .content_main .planting_instruction .time_section .time {
+  color: #70737c;
+}
+.blog_section .blog_content .content_main .planting_instruction .instruction_text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 20px;
+}
+.blog_section .blog_content .content_main .planting_instruction .instruction_text_subtitle {
+  color: #70737c;
+}
+.blog_section .blog_content .content_main .planting_instruction .instruction_text .read {
+  border: 1px solid #FFF;
+  border-radius: 8px;
+  max-width: 106px;
+  width: 100%;
+  min-height: 51px;
+  height: 100%;
+  background-color: #FFF;
+  color: green;
+}
+.blog_section .blog_content .content_main .planting_instruction .instruction_text .read:hover {
+  border-color: green;
+}
+@media screen and (max-width: 575px) {
+  .blog_section .blog_content .content_main {
+    min-height: 400px;
+  }
+}
+.blog_section .blog_content .content_aside {
+  display: grid;
+  grid-column: 3/span 4;
+  grid-row: 1/3;
+  max-width: 350px;
+  width: 100%;
+  min-height: calc(400px + 20vw);
+  padding: 30px;
+  border-radius: 12px;
+  background-color: #EFF2F8;
+  background-image: url(/assets/images/blog_section/female-gardener.png);
+  background-size: calc(120px + 7.8260869565vw);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.blog_section .blog_content .content_aside .planting_instruction {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.blog_section .blog_content .content_aside .planting_instruction .time_section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+.blog_section .blog_content .content_aside .planting_instruction .time_section .time {
+  color: #70737c;
+}
+.blog_section .blog_content .content_aside .planting_instruction .instruction_text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 20px;
+}
+.blog_section .blog_content .content_aside .planting_instruction .instruction_text_subtitle {
+  color: #70737c;
+}
+.blog_section .blog_content .content_aside .planting_instruction .instruction_text .read {
+  border: 1px solid #FFF;
+  border-radius: 8px;
+  max-width: 106px;
+  width: 100%;
+  min-height: 51px;
+  height: 100%;
+  background-color: #FFF;
+  color: green;
+}
+.blog_section .blog_content .content_aside .planting_instruction .instruction_text .read:hover {
+  border-color: green;
+}
+@media screen and (max-width: 580px) {
+  .blog_section .blog_content .content_aside {
+    min-height: 450px !important;
+  }
+}
+.blog_section .blog_content .content_article {
+  max-width: 350px;
+  width: 100%;
+  min-height: 300px;
+  padding: 30px;
+  border-radius: 12px;
+  background-color: #EFF2F8;
+  background-image: url(/assets/images/blog_section/strawberry.png);
+  background-size: calc(140px + 3.4782608696vw);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.blog_section .blog_content .content_article .planting_instruction {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.blog_section .blog_content .content_article .planting_instruction .time_section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+.blog_section .blog_content .content_article .planting_instruction .time_section .time {
+  color: #70737c;
+}
+.blog_section .blog_content .content_article .planting_instruction .instruction_text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 20px;
+}
+.blog_section .blog_content .content_article .planting_instruction .instruction_text_subtitle {
+  color: #70737c;
+}
+.blog_section .blog_content .content_article .planting_instruction .instruction_text .read {
+  border: 1px solid #FFF;
+  border-radius: 8px;
+  max-width: 106px;
+  width: 100%;
+  min-height: 51px;
+  height: 100%;
+  background-color: #FFF;
+  color: green;
+}
+.blog_section .blog_content .content_article .planting_instruction .instruction_text .read:hover {
+  border-color: green;
+}
+.blog_section .blog_content .content_article_2 {
+  max-width: 350px;
+  width: 100%;
+  min-height: 300px;
+  padding: 30px;
+  border-radius: 12px;
+  background-color: #EFF2F8;
+  background-image: url(/assets/images/blog_section/strawberry.png);
+  background-size: calc(140px + 3.4782608696vw);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.blog_section .blog_content .content_article_2 .planting_instruction {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.blog_section .blog_content .content_article_2 .planting_instruction .time_section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+.blog_section .blog_content .content_article_2 .planting_instruction .time_section .time {
+  color: #70737c;
+}
+.blog_section .blog_content .content_article_2 .planting_instruction .instruction_text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 20px;
+}
+.blog_section .blog_content .content_article_2 .planting_instruction .instruction_text_subtitle {
+  color: #70737c;
+}
+.blog_section .blog_content .content_article_2 .planting_instruction .instruction_text .read {
+  border: 1px solid #FFF;
+  border-radius: 8px;
+  max-width: 106px;
+  width: 100%;
+  min-height: 51px;
+  height: 100%;
+  background-color: #FFF;
+  color: green;
+}
+.blog_section .blog_content .content_article_2 .planting_instruction .instruction_text .read:hover {
+  border-color: green;
+}
+@media screen and (max-width: 1000px) {
+  .blog_section .blog_content .content_main {
+    max-width: 1000px;
+    width: 100%;
+    display: grid !important;
+  }
+  .blog_section .blog_content .content_aside {
+    display: grid !important;
+    grid-column: 1/span 2 !important;
+    grid-row: 2/3 !important;
+    max-width: 1000px;
+    width: 100%;
+    min-height: 350px;
+  }
+  .blog_section .blog_content .content_article {
+    max-width: 455px;
+    width: 100%;
+    display: grid;
+    grid-column: 1/1;
+    grid-row: 3/4;
+  }
+  .blog_section .blog_content .content_article_2 {
+    max-width: 455px;
+    width: 100%;
+    display: grid;
+    grid-column: 2/2;
+    grid-row: 3/4;
+  }
+}
+@media screen and (max-width: 612px) {
+  .blog_section .blog_content .content_article {
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 3/4;
+    max-width: 600px;
+    width: 100%;
+  }
+  .blog_section .blog_content .content_article_2 {
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 4/5;
+    max-width: 600px;
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
